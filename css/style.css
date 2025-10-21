@@ -10,6 +10,7 @@ body {
 
 header {
     display: flex;
+    position: relative;
     flex-direction: column;
     background-image: url('../images/Home-BG.jpg');
     background-size: contain;
@@ -111,10 +112,16 @@ header {
     align-items: center;
 }
 
+@media screen and (min-width:1191px) {
+    header {
+        height: 110vh;
+    }
+}
+
 @media only screen and (max-width:1190px) {
     header {
         background-size: cover;
-        height: 80vh;
+        height: 100vh;
     }
 
     .subhead {
@@ -158,6 +165,7 @@ header {
     justify-content: space-around;
     align-items: center;
     background-color: rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
 }
 
 .menu {
@@ -195,11 +203,13 @@ header {
 
 .social img {
     padding: 10px;
+    cursor: pointer;
 }
 
 .btn {
     background-color: #fff;
     padding: 28px 52px;
+    cursor: pointer;
 }
 
 @media only screen and (max-width:1190px) {
@@ -228,3 +238,5 @@ header {
         text-align: center;
     }
 }
+
+/* End of Menu header */
