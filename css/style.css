@@ -149,6 +149,7 @@ header {
     header {
         /* background-image: none; */
         height: auto;
+        overflow: hidden;
     }
 
     .addressbar {
