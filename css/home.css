@@ -421,7 +421,7 @@
 /* Why choose us section */
 
 .choose {
-    background-image: linear-gradient(to right, #091242 50%, #fff 50%);
+    background-image: linear-gradient(to right, #091242 50%, #f4f4f4 50%);
     height: 450px;
     margin: 40px auto 20px auto;
     display: flex;
@@ -448,16 +448,112 @@
 @media screen and (max-width:1190px) {
     .choose {
         flex-direction: column-reverse;
-        background-image: linear-gradient(to top, #091242 50%, #fff 50%);
+        background-image: linear-gradient(to top, #091242 50%, #F4F4F4 50%);
         height: auto;
     }
 }
 
 @media screen and (max-width:780px) {
     .choose {
-        background: rgba(238, 235, 222, 0.3);
+        background: #F4F4F4;
     }
     .img-container {
         display: none;
+    }
+}
+
+/* End of why choose us section */
+
+/* Team section */
+
+.team {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.team-head {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.team-head p {
+    width: fit-content;
+    background-color: rgba(215, 210, 186, 0.3);
+    border-left: 3px solid rgb(255, 242, 0);
+    padding: 2px 8px;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.team-head h1 {
+    font-size: 35px;
+    padding: 5px 0;
+    font-weight: 400;
+    font-family: 'Rubik',sans-serif;
+}
+
+.team-members {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+}
+
+.members {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.member-name {
+    background-color: #091242;
+    color: #fff;
+    padding: 40px 20px 20px 20px;
+}
+
+.member-name p {
+    font-size: 20px;
+}
+
+.member-name span {
+    font-weight: 400;
+    font-family: 'Krub',sans-serif;
+}
+
+.team1 {
+    cursor: pointer;
+    position: absolute;
+    bottom: 65px;
+    right: 0;
+}
+
+@media screen and (max-width:1190px) {
+    .team-members {
+        grid-template-columns: 1fr;
+    }
+    .members {
+        flex-direction: row;
+    }
+    .member-name {
+        width: 100px;
+    }
+    .team1 {
+        left: 0;
+    }
+}
+
+@media screen and (max-width:580px) {
+    .members {
+        flex-direction: column;
+    }
+    .member-name{
+        width: auto;
+    }
+    .team1 {
+        left: auto;
+        right: 0;
     }
 }
