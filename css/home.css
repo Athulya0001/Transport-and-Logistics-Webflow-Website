@@ -149,9 +149,10 @@
 /* About section */
 
 .about-section {
-    background-image:url(../images/Photo.png);
+    background-image: url(../images/Photo.png);
     background-repeat: no-repeat;
-    height: 1100px;
+    height: auto;
+    margin-bottom: 50px;
     align-content: center;
     justify-items: center;
 }
@@ -185,6 +186,40 @@
     margin-top: 20px;
 }
 
+.counter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+    box-sizing: border-box;
+}
+
+.counter1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 30px 60px;
+    border-top: 1px solid rgba(85, 84, 84, 0.3);
+    border-bottom: 1px solid rgba(85, 84, 84, 0.3);
+}
+
+.counter1:nth-child(1) {
+    border-right: 1px solid rgba(85, 84, 84, 0.3);
+}
+
+.counter1 h2 {
+    font-size: 50px;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 600;
+}
+
+.counter1 span {
+    font-size: 20px;
+    font-family: 'League Spartan', sans-serif;
+    font-weight: 400;
+}
+
 @media screen and (max-width:1190px) {
     .about-content {
         flex-direction: column;
@@ -194,15 +229,36 @@
 }
 
 @media screen and (max-width:780px) {
+    .about-section {
+        height: auto;
+    }
+
     .about-content {
         flex-direction: column;
         width: auto;
     }
+
     .img-box {
         transform: scale(0.7);
     }
+
     .txt {
         display: inline-block;
+    }
+
+    .counter {
+        flex-direction: column;
+        border-top: 1px solid rgba(85, 84, 84, 0.3);
+        border-bottom: 1px solid rgba(85, 84, 84, 0.3);
+    }
+
+    .counter1 {
+        border: transparent;
+    }
+
+    .counter1:nth-child(1) {
+        border-right: transparent;
+        border-bottom: 1px solid rgba(85, 84, 84, 0.3);
     }
 }
 
@@ -213,10 +269,151 @@
         gap: 10px;
         padding: 20px 40px;
     }
+
     .img-box {
         transform: scale(0.5);
     }
+
     .txt {
         display: inline-block;
+    }
+}
+
+/* End of about section */
+
+/* Project section */
+
+.projects {
+    position: relative;
+    height: 750px;
+    background: url(../images/Group\ 1.png);
+    background-size: cover;
+}
+
+.projects h2 {
+    font-weight: 600;
+    font-family: 'Rubik', sans-serif;
+    font-size: 35px;
+    text-align: center;
+}
+
+.img-grid {
+    margin: auto 70px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 25px;
+}
+
+.grid-box {
+    margin-top: 20px;
+    height: 400px;
+    position: relative;
+    z-index: 100;
+    overflow: hidden;
+    font-weight: 500;
+}
+
+.grid1 {
+    width: 100%;
+    padding: 20px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    box-shadow: inset -10px 10px 40px rgba(0, 0, 0, 0.7), 10px -10px 35px rgba(0, 0, 0, 0.7);
+}
+
+.grid1 p {
+    color: #fff;
+    font-size: 20px;
+    font-family: 'Rubik', sans-serif;
+}
+
+.grid1 span {
+    color: #FFB629;
+    font-family: 'Krub', sans-serif;
+}
+
+.grid-box:nth-child(1) {
+    background-image: url(../images/tanker.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.grid-box:nth-child(2) {
+    background-image: url(../images/package.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.grid-box:nth-child(3) {
+    background-image: url(../images/truck.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.grid-box:nth-child(4) {
+    background-image: url(../images/warehouse-distributioin.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.grid-box:nth-child(5) {
+    background-image: url(../images/ship.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.more-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 65px;
+    cursor: pointer;
+    color: #fff;
+}
+
+.more-btn span {
+    background-image: url(../images/button-bg.png);
+    background-repeat: no-repeat;
+    padding: 20px 60px;
+    /* width: 190px; */
+    text-align: center;
+}
+
+@media only screen and (max-width:1190px) {
+    .projects {
+        margin-top: 40px;
+    }
+
+    .grid-box {
+        height: 300px;
+    }
+
+    .img-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (max-width:780px) {
+    .projects {
+        margin-top: 40px;
+        height: auto;
+    }
+
+    .img-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width:580px) {
+    .projects {
+        margin-top: 40px;
+        height: auto;
+        padding: 20px;
+    }
+
+    .img-grid {
+        grid-template-columns: repeat(1, 1fr);
     }
 }
