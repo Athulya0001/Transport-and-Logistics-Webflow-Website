@@ -248,6 +248,11 @@
     z-index: 100;
 }
 
+#blue-bg .more-btn span {
+    background-image: url(../images/Background.png);
+    color: #1C1F35;
+}
+
 /* End of blue button */
 
 /* Yellow button */
@@ -263,3 +268,120 @@
 }
 
 /* End of yellow button */
+
+/* Service section */
+
+.service-section {
+    margin: 50px 0;
+    background-color: #F4F4F4;
+    padding: 50px 0;
+}
+
+.service-container {
+    margin: 0 100px;
+}
+
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 80px;
+    padding: 30px 0;
+}
+
+.service-box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 10px;
+}
+
+.service-box img {
+    width: auto;
+    height: auto;
+    max-width: none;
+    display: block;
+}
+
+.service-box h2 {
+    font-size: 25px;
+    font-weight: 400;
+}
+
+@media screen and (max-width:1190px) {
+    .service-container {
+        margin: 0 50px;
+    }
+}
+
+@media screen and (max-width:780px) {
+    .service-container {
+        margin: 0 80px;
+    }
+
+    .service-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .section-head h1 {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:580px) {
+    .service-grid {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 30px;
+    }
+}
+
+/* End of service section */
+
+/* Pricing section */
+
+.pricing-container {
+    margin: 40px 100px;
+}
+
+.pricing-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.price-box {
+    background-color: #F4F4F4;
+    color: #1C1F35;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.price-box h1 {
+    font-size: 75px;
+    padding: 30px 0;
+    font-weight: 500;
+}
+
+.price-box h1 span {
+    font-size: 22px;
+    font-weight: 400;
+}
+
+#blue-bg {
+    background-color: #091242;
+    color: #fff;
+}
+
+.feature-div {
+    width: 50%;
+    padding: 20px 50px;
+    border-top: 0.2px solid ;
+    text-align: center;
+}
+
+.feature-div:nth-child(6) {
+    border-bottom: 0.2px solid;
+}
