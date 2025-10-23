@@ -20,12 +20,12 @@ header {
 
 input::placeholder {
     color: #fff;
-    font-family: 'Krub',sans-serif;
+    font-family: 'Krub', sans-serif;
 }
 
 textarea::placeholder {
     color: #fff;
-    font-family: 'Krub',sans-serif;
+    font-family: 'Krub', sans-serif;
 }
 
 /* Main header */
@@ -103,6 +103,7 @@ textarea::placeholder {
     header {
         height: auto;
     }
+
     .addressbar {
         align-items: flex-start;
     }
@@ -117,6 +118,7 @@ textarea::placeholder {
         justify-content: center;
         align-items: center;
     }
+
     .txt p {
         text-align: center;
     }
@@ -222,18 +224,23 @@ textarea::placeholder {
 /* Footer section */
 
 footer {
+    display: flex;
+    flex-direction: column;
     overflow: hidden;
     margin-top: 30px;
-    height: 560px;
+    height: auto;
     background-color: #091242;
-    background-image: url(../images/footer-bg.png);
+}
+
+.foot-container {
+    background-image: linear-gradient(to top, #091242 85%, rgba(57, 60, 82, 0.5) 15%);
+    height: auto;
 }
 
 .foot-head {
-    width: 100%;
     /* padding: 30px; */
     box-sizing: border-box;
-    /* background-color: rgba(255, 255, 255, 0.3); */
+    margin: auto 100px;
 }
 
 .foot-head .logo {
@@ -248,11 +255,10 @@ footer {
 }
 
 .foot-box {
-    width: 33.33%;
+    width: 30%;
     display: flex;
     flex-direction: column;
     justify-content: right;
-    /* align-items: center; */
 }
 
 .foot-box .address {
@@ -307,7 +313,7 @@ footer {
 }
 
 
-.foot-item:nth-child(3){
+.foot-item:nth-child(3) {
     justify-content: left;
     align-items: center;
 }
@@ -320,27 +326,126 @@ footer {
 }
 
 #send-button {
-    background-image: linear-gradient(to right, #FFB629,#FFDA56,#FFD7A6);
+    background-image: linear-gradient(to right, #FFB629, #FFDA56, #FFD7A6);
     padding: 20px 30px;
 }
 
+hr {
+    height: 1px;
+    background-color: #b9b8b8;
+    border: none;
+    margin-top: 30px;
+}
+
+.license {
+    padding: 20px 100px;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Krub', sans-serif;
+    font-weight: 500;
+    line-height: 250%;
+}
+
+.license p {
+    display: inline-block;
+}
+
+.lists {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    font-weight: 400;
+    color: #8388A7;
+}
+
 @media screen and (max-width:1190px) {
-    footer {
+    .foot-container {
         background-image: none;
         background-color: #091242;
         height: auto;
         overflow: hidden;
     }
+
     .subhead.head-foot {
-        flex-wrap: wrap;
-        flex-direction: row;
         align-items: flex-start;
     }
-    .foot-item{
-        padding-top: 20px;
+
+    .foot-box {
+        width: auto;
+        justify-content: start;
+        align-items: start;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
     }
+
+    .foot-item {
+        flex-direction: row;
+        width: 100%;
+    }
+
+    .foot-item h2 {
+        padding: 10px;
+    }
+
+    .foot-content,
+    .head-foot .address {
+        padding: 10px;
+    }
+
+    .foot-content {
+        grid-column: 1 / span 2;
+    }
+
+    .head-foot.address {
+        grid-column: 1;
+    }
+
+    .foot-head .logo {
+        justify-content: start;
+        padding: 20px 30px;
+        grid-column: 1 / span 2;
+    }
+
+    .foot-item ul {
+        display: flex;
+    }
+
     .foot-item h2 {
         position: static;
     }
+
+    #send-button {
+        width: 100px;
+        text-align: center;
+    }
+    .social-btn .social {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .license {
+        flex-direction: column;
+    }
 }
 
+@media only screen and (max-width:950px) {
+    .subhead.head-foot {
+        align-items: center;
+    }
+    .foot-item {
+        width: auto;
+        align-items: center;
+    }
+    .foot-item ul {
+        flex-direction: column;
+    }
+    .subscribe {
+        display: flex;
+        flex-direction: column;
+    }
+}

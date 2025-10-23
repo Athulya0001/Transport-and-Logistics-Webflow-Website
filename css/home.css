@@ -745,7 +745,6 @@ header {
     align-items: center;
     flex-direction: column;
     height: 100%;
-    /* border-right: 1px solid rgba(122, 122, 120, 0.3); */
 }
 
 .calender h2 {
