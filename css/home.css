@@ -37,16 +37,6 @@ header {
     text-align: justify;
 }
 
-.explore-btn {
-    display: inline-block;
-    background-image: url(../images/Background.png);
-    background-repeat: no-repeat;
-    padding: 20px 40px;
-    text-align: center;
-    margin-top: 15px;
-    cursor: pointer;
-}
-
 @media only screen and (max-width:1190px) {
     .banner-content {
         position: static;
@@ -367,22 +357,6 @@ header {
     background-size: cover;
 }
 
-.more-btn {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 65px;
-    cursor: pointer;
-    color: #fff;
-}
-
-.more-btn span {
-    background-image: url(../images/button-bg.png);
-    background-repeat: no-repeat;
-    padding: 20px 60px;
-    text-align: center;
-}
-
 @media only screen and (max-width:1190px) {
 
     .grid-box {
@@ -476,112 +450,6 @@ header {
 }
 
 /* End of why choose us section */
-
-/* Team section */
-
-.team {
-    margin: 100px;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
-.team-head {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.team-head p {
-    width: fit-content;
-    background-color: rgba(215, 210, 186, 0.3);
-    border-left: 3px solid rgb(255, 242, 0);
-    padding: 2px 8px;
-    font-size: 14px;
-    font-weight: 400;
-}
-
-.team-head h1 {
-    font-size: 35px;
-    padding: 5px 0;
-    font-weight: 400;
-    font-family: 'Rubik', sans-serif;
-}
-
-.team-members {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-}
-
-.members {
-    display: flex;
-    flex-direction: column;
-    position: relative;
-}
-
-.member-name {
-    background-color: #091242;
-    color: #fff;
-    padding: 40px 20px 20px 20px;
-}
-
-.member-name p {
-    font-size: 20px;
-}
-
-.member-name span {
-    font-weight: 400;
-    font-family: 'Krub', sans-serif;
-}
-
-.team1 {
-    cursor: pointer;
-    position: absolute;
-    bottom: 65px;
-    right: 0;
-}
-
-@media screen and (max-width:1190px) {
-    .team {
-        align-items: center;
-        justify-content: center;
-    }
-
-    .team-members {
-        grid-template-columns: 1fr;
-    }
-
-    .members {
-        flex-direction: row;
-    }
-
-    .member-name {
-        width: 100px;
-    }
-
-    .team1 {
-        left: 0;
-    }
-}
-
-@media screen and (max-width:580px) {
-    .members {
-        flex-direction: column;
-    }
-
-    .member-name {
-        width: auto;
-    }
-
-    .team1 {
-        left: auto;
-        right: 0;
-    }
-}
-
-/* End of team section */
 
 /* Contact section */
 

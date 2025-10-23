@@ -1,0 +1,264 @@
+/* Testimonial section */
+
+.testimonial {
+    margin: 40px 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.test-head {
+    width: 100%;
+}
+
+.main-test {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.test-head span {
+    background-color: rgba(215, 210, 186, 0.3);
+    border-left: 3px solid rgb(255, 242, 0);
+    padding: 2px 8px;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.test-content {
+    display: flex;
+    justify-content: center;
+    text-align: justify;
+}
+
+.review {
+    padding: 40px 60px;
+}
+
+.review p {
+    font-style: italic;
+    font-family: 'Krub', sans-serif;
+    font-weight: 400;
+}
+
+.review:nth-child(1) {
+    background-color: #F4F4F4;
+}
+
+.review:nth-child(1) p {
+    color: #666C89;
+}
+
+.review:nth-child(2) {
+    background-color: #091242;
+    color: #fff;
+}
+
+.user {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.username {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.username h5 {
+    font-size: 20px;
+    font-weight: 500;
+    font-family: 'Rubik', sans-serif;
+}
+
+.username p {
+    font-style: normal;
+}
+
+@media screen and (max-width:780px) {
+    .test-content {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width:580px) {
+    .quote-img {
+        display: none;
+    }
+}
+
+/* Testtimonial section ends here */
+
+/* Team section */
+
+.team {
+    margin: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.team-head {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.team-head p {
+    width: fit-content;
+    background-color: rgba(215, 210, 186, 0.3);
+    border-left: 3px solid rgb(255, 242, 0);
+    padding: 2px 8px;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.team-head h1 {
+    font-size: 35px;
+    padding: 5px 0;
+    font-weight: 400;
+    font-family: 'Rubik', sans-serif;
+}
+
+.team-members {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.members {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.member-name {
+    background-color: #091242;
+    color: #fff;
+    padding: 40px 20px 20px 20px;
+}
+
+.member-name p {
+    font-size: 20px;
+}
+
+.member-name span {
+    font-weight: 400;
+    font-family: 'Krub', sans-serif;
+}
+
+.team1 {
+    cursor: pointer;
+    position: absolute;
+    bottom: 65px;
+    right: 0;
+}
+
+@media screen and (max-width:1190px) {
+    .team {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .team-members {
+        grid-template-columns: 1fr;
+    }
+
+    .members {
+        flex-direction: row;
+    }
+
+    .member-name {
+        width: 100px;
+    }
+
+    .team1 {
+        left: 0;
+    }
+}
+
+@media screen and (max-width:580px) {
+    .members {
+        flex-direction: column;
+    }
+
+    .member-name {
+        width: auto;
+    }
+
+    .team1 {
+        left: auto;
+        right: 0;
+    }
+}
+
+/* End of team section */
+
+/* Section head */
+
+.section-head span {
+    font-family: 'Krub', sans-serif;
+    background-color: rgba(215, 210, 186, 0.3);
+    border-left: 3px solid rgb(255, 242, 0);
+    padding: 2px 8px;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.section-head p {
+    font-family: 'Krub', sans-serif;
+    display: inline;
+    background-color: rgba(215, 210, 186, 0.3);
+    border-left: 3px solid rgb(255, 242, 0);
+    padding: 2px 8px;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.section-head h1 {
+    font-size: 35px;
+    padding: 15px 0;
+    font-weight: 400;
+    font-family: 'Rubik', sans-serif;
+}
+
+/* End of Section head */
+
+/* Blue color button */
+
+.more-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 65px;
+    cursor: pointer;
+    color: #fff;
+}
+
+.more-btn span {
+    background-image: url(../images/button-bg.png);
+    background-repeat: no-repeat;
+    padding: 20px 60px;
+    text-align: center;
+}
+
+/* End of blue button */
+
+/* Yellow button */
+
+.explore-btn {
+    display: inline-block;
+    background-image: url(../images/Background.png);
+    background-repeat: no-repeat;
+    padding: 20px 40px;
+    text-align: center;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+/* End of yellow button */
