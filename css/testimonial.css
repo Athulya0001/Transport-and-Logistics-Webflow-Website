@@ -1,8 +1,7 @@
 /* Testimonial section */
 
 .testimonial {
-    margin: auto;
-    width: 80vw;
+    margin: 40px 100px;
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -31,7 +30,6 @@
 .test-content {
     display: flex;
     justify-content: center;
-    /* padding: 30px; */
     text-align: justify;
 }
 
@@ -79,12 +77,6 @@
 
 .username p {
     font-style: normal;
-}
-
-@media screen and (max-width:1190px) {
-    .testimonial {
-        padding: 40px;
-    }
 }
 
 @media screen and (max-width:780px) {

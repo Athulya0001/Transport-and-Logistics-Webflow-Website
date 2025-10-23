@@ -12,31 +12,35 @@ header {
     display: flex;
     position: relative;
     flex-direction: column;
-    background-image: url('../images/Home-BG.jpg');
-    background-size: contain;
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     height: 90vh;
+}
+
+input::placeholder {
+    color: #fff;
+    font-family: 'Krub',sans-serif;
+}
+
+textarea::placeholder {
+    color: #fff;
+    font-family: 'Krub',sans-serif;
 }
 
 /* Main header */
 
 .head {
     background-color: #091242;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0 20px;
+    width: 100%;
+    padding: 40px 0px;
     box-sizing: border-box;
-    padding: 40px 0;
 }
 
 .subhead {
-    width: 1199.13px;
-    opacity: 1;
     display: flex;
-    justify-content: space-around;
-    /* padding: 5px 0; */
+    justify-content: space-between;
+    margin: auto 100px;
 }
 
 .logo {
@@ -96,6 +100,13 @@ header {
 }
 
 @media only screen and (max-width:780px) {
+    header {
+        height: auto;
+    }
+    .addressbar {
+        align-items: flex-start;
+    }
+
     .address {
         flex-direction: column;
     }
@@ -106,17 +117,20 @@ header {
         justify-content: center;
         align-items: center;
     }
+    .txt p {
+        text-align: center;
+    }
 }
 
 @media only screen and (max-width:560px) {
     header {
-        /* background-image: none; */
         height: auto;
         overflow: hidden;
     }
 
     .addressbar {
         flex-direction: column;
+        align-items: center;
     }
 }
 
@@ -124,29 +138,27 @@ header {
 
 /* Menu header */
 
-.main-menu {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+.head-menu {
     background-color: rgba(0, 0, 0, 0.2);
-    box-sizing: border-box;
 }
 
-.menu {
+.main-menu {
+    margin: 0 100px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 }
 
 .menu ul {
     display: flex;
+    gap: 30px;
     padding: 10px;
 }
 
 .menu ul li {
     list-style: none;
+    padding-right: 30px;
     border-right: 1px solid rgba(183, 182, 182, 0.5);
-    padding: 0 30px;
 }
 
 .menu ul li:nth-child(5) {
