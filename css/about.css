@@ -12,8 +12,17 @@ header {
     height: 650px;
 }
 
-p{
-    font-family: 'Krub',sans-serif;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Rubik', sans-serif;
+}
+
+p {
+    font-family: 'Krub', sans-serif;
     font-weight: 400;
 }
 
@@ -68,7 +77,7 @@ p{
     background-color: #F4F4F4;
 }
 
-.btn-box:nth-child(1){
+.btn-box:nth-child(1) {
     background-color: #FFB82B;
     color: #fff;
 }
@@ -78,7 +87,7 @@ p{
 }
 
 @media screen and (max-width:1190px) {
-    .about{
+    .about {
         flex-direction: column-reverse;
         margin: 50px 100px;
     }
@@ -89,6 +98,74 @@ p{
         display: none;
     }
 }
+
+/* End of About section */
+
+/* Service section */
+
+.service-section {
+    margin: 50px 0;
+    background-color: #F4F4F4;
+    padding: 50px 0;
+}
+
+.service-container {
+    margin: 0 100px;
+}
+
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 80px;
+    padding: 30px 0;
+}
+
+.service-box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 10px;
+}
+
+.service-box img {
+    width: auto;
+    height: auto;
+    max-width: none;
+    display: block;
+}
+
+.service-box h2 {
+    font-size: 25px;
+    font-weight: 400;
+}
+
+@media screen and (max-width:1190px) {
+    .service-container {
+        margin: 0 50px;
+    }
+}
+
+@media screen and (max-width:780px) {
+    .service-container {
+        margin: 0 80px;
+    }
+    .service-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .section-head h1{
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:580px) {
+    .service-grid {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 30px;
+    }
+}
+
+/* End of service section */
 
 /* client section */
 

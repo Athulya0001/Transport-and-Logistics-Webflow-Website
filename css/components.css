@@ -223,7 +223,7 @@
 .section-head h1 {
     font-size: 35px;
     padding: 15px 0;
-    font-weight: 400;
+    font-weight: 600;
     font-family: 'Rubik', sans-serif;
 }
 
@@ -241,10 +241,11 @@
 }
 
 .more-btn span {
-    background-image: url(../images/button-bg.png);
     background-repeat: no-repeat;
     padding: 20px 60px;
     text-align: center;
+    background-image: url(../images/button-bg.png);
+    z-index: 100;
 }
 
 /* End of blue button */
