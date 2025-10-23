@@ -6,6 +6,7 @@
 body {
     font-family: 'Krub', sans-serif;
     font-weight: 600;
+    overflow-x: hidden;
 }
 
 header {
@@ -230,6 +231,7 @@ footer {
     margin-top: 30px;
     height: auto;
     background-color: #091242;
+    overflow: hidden;
 }
 
 .foot-container {
