@@ -17,11 +17,13 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
+    padding-top: 10px;
 }
 
 .test-head span {
-    background-color: rgba(215, 210, 186, 0.3);
-    border-left: 3px solid rgb(255, 242, 0);
+    background-color: #E8E8E880;
+    border-left: 3px solid transparent;
+    border-image: linear-gradient(to bottom, #FFB629,#FFDA56, #FFD7A6) 1;    
     padding: 2px 8px;
     font-size: 14px;
     font-weight: 400;
@@ -47,12 +49,12 @@
     background-color: #F4F4F4;
 }
 
-.review:nth-child(1) p {
-    color: #666C89;
-}
-
 .review:nth-child(2) {
     background-color: #091242;
+}
+
+.review:nth-child(2) p ,
+.review:nth-child(2) h6 {
     color: #fff;
 }
 
@@ -67,16 +69,6 @@
     justify-content: center;
     align-items: center;
     gap: 10px;
-}
-
-.username h5 {
-    font-size: 20px;
-    font-weight: 500;
-    font-family: 'Rubik', sans-serif;
-}
-
-.username p {
-    font-style: normal;
 }
 
 @media screen and (max-width:780px) {
@@ -110,19 +102,18 @@
 }
 
 .team-head p {
+    color: #1C1F35;
+    background-color: #E8E8E880;
+    border-left: 3px solid transparent;
+    border-image: linear-gradient(to bottom, #FFB629,#FFDA56, #FFD7A6) 1;
     width: fit-content;
-    background-color: rgba(215, 210, 186, 0.3);
-    border-left: 3px solid rgb(255, 242, 0);
     padding: 2px 8px;
     font-size: 14px;
     font-weight: 400;
 }
 
-.team-head h1 {
-    font-size: 35px;
-    padding: 5px 0;
-    font-weight: 400;
-    font-family: 'Rubik', sans-serif;
+.team-head h3 {
+    padding: 10px 0;
 }
 
 .team-members {
@@ -138,18 +129,18 @@
 }
 
 .member-name {
-    background-color: #091242;
-    color: #fff;
+    background-color: #1C1F35;
     padding: 40px 20px 20px 20px;
 }
 
-.member-name p {
-    font-size: 20px;
+.member-name h6 {
+    line-height: 100%;
+    color: #fff;
+    font-weight: 500;
 }
 
-.member-name span {
-    font-weight: 400;
-    font-family: 'Krub', sans-serif;
+.member-name p {
+    color: #fff;
 }
 
 .team1 {
@@ -203,8 +194,9 @@
 
 .section-head span {
     font-family: 'Krub', sans-serif;
-    background-color: rgba(215, 210, 186, 0.3);
-    border-left: 3px solid rgb(255, 242, 0);
+    background-color: #E8E8E880;
+    border-left: 3px solid transparent;
+    border-image: linear-gradient(to bottom, #FFB629,#FFDA56, #FFD7A6) 1;
     padding: 2px 8px;
     font-size: 14px;
     font-weight: 400;
@@ -213,9 +205,9 @@
 .section-head p {
     font-family: 'Krub', sans-serif;
     display: inline;
-    background-color: rgba(215, 210, 186, 0.3);
-    border-left: 3px solid rgb(255, 242, 0);
-    padding: 2px 8px;
+    background-color: #E8E8E880;
+    border-left: 3px solid transparent;
+    border-image: linear-gradient(to bottom, #FFB629,#FFDA56, #FFD7A6) 1;    padding: 2px 8px;
     font-size: 14px;
     font-weight: 400;
 }
@@ -232,42 +224,51 @@
 /* Blue color button */
 
 .more-btn {
+    margin-top: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 65px;
-    cursor: pointer;
+    position: relative;
+    width: 194px;
+    height: 60px;
+    font-family: 'Krub', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 135%;
     color: #fff;
+    border: none;
+    cursor: pointer;
+    background-color: #091242;
+    overflow: hidden;
+    transition: all 0.4s ease;
+}
+
+.more-btn::after {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    left: 159px;
+    top: 30px;
+    background: #1F2A69;
+    border-radius: 50%;
+    transition: all 0.4s ease;
 }
 
 .more-btn span {
-    background-repeat: no-repeat;
-    padding: 20px 60px;
-    text-align: center;
-    background-image: url(../images/button-bg.png);
-    z-index: 100;
+    position: relative;
+    z-index: 1;
 }
 
-#blue-bg .more-btn span {
-    background-image: url(../images/Background.png);
-    color: #1C1F35;
+.more-btn:hover::after {
+    width: 206px;
+    height: 206px;
+    top: -43px;
+    left: 74px;
+    opacity: 1;
 }
 
 /* End of blue button */
-
-/* Yellow button */
-
-.explore-btn {
-    display: inline-block;
-    background-image: url(../images/Background.png);
-    background-repeat: no-repeat;
-    padding: 20px 40px;
-    text-align: center;
-    margin-top: 15px;
-    cursor: pointer;
-}
-
-/* End of yellow button */
 
 /* Service section */
 
@@ -378,10 +379,61 @@
 .feature-div {
     width: 50%;
     padding: 20px 50px;
-    border-top: 0.2px solid ;
+    border-top: 0.2px solid;
     text-align: center;
 }
 
 .feature-div:nth-child(6) {
     border-bottom: 0.2px solid;
 }
+
+/* End of price section */
+
+/* Yellow Gradient Button */
+
+.explore-btn {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 194px;
+    height: 60px;
+    font-family: 'Krub', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 135%;
+    color: #23212A;
+    border: none;
+    cursor: pointer;
+    background: linear-gradient(94.06deg, #FFB629 -1.21%, #FFDA56 58.66%, #FFD7A6 116.84%);
+    overflow: hidden;
+    transition: all 0.4s ease;
+}
+
+.explore-btn::after {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    left: 159px;
+    top: 30px;
+    background: #ffffff;
+    border-radius: 50%;
+    transition: all 0.4s ease;
+}
+
+.explore-btn span {
+    position: relative;
+    z-index: 1;
+}
+
+.explore-btn:hover::after {
+    width: 206px;
+    height: 206px;
+    top: -43px;
+    left: 74px;
+    opacity: 1;
+}
+
+/* Yellow Gradient Button ends here */

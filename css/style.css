@@ -5,7 +5,6 @@
 
 body {
     font-family: 'Krub', sans-serif;
-    font-weight: 600;
     overflow-x: hidden;
 }
 
@@ -16,7 +15,67 @@ header {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 90vh;
+    height: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Rubik', sans-serif;
+    color: #1c1f35;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+h1 {
+    font-weight: 600;
+    font-size: 50px;
+    line-height: 133%;
+    text-transform: capitalize;
+}
+
+h2 {
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 133%;
+    text-transform: capitalize;
+}
+
+h3 {
+    font-size: 35px;
+    line-height: 100%;
+}
+
+h4 {
+    font-size: 30px;
+    line-height: 130%;
+}
+
+h5 {
+    font-size: 25px;
+    line-height: 130%;
+    font-weight: 400;
+}
+
+h6 {
+    font-size: 20px;
+    line-height: 130%;
+}
+
+p {
+    color: #666c89;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 152%;
+}
+
+li {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 327%;
 }
 
 input::placeholder {
@@ -62,6 +121,8 @@ textarea::placeholder {
     font-size: 30px;
     color: #fff;
     margin: 0;
+    font-weight: 600;
+    line-height: 100%;
 }
 
 .addressbar {
@@ -73,11 +134,15 @@ textarea::placeholder {
 
 .address {
     display: flex;
-    color: #fff;
-    font-size: 14px;
     gap: 10px;
     justify-content: center;
     align-items: center;
+}
+
+.txt p {
+    color: #fff;
+    font-size: 14px;
+    line-height: 135%;
 }
 
 @media screen and (min-width:1191px) {
@@ -159,6 +224,7 @@ textarea::placeholder {
 }
 
 .menu ul li {
+    line-height: normal;
     list-style: none;
     padding-right: 30px;
     border-right: 1px solid rgba(183, 182, 182, 0.5);
@@ -268,7 +334,7 @@ footer {
     padding: 30px;
 }
 
-.foot-content {
+.foot-content p {
     color: #fff;
     padding: 30px;
     margin-top: 20px;
@@ -282,6 +348,11 @@ footer {
     justify-content: start;
     align-items: center;
     gap: 20px;
+}
+
+.subscribe {
+    align-items: start;
+    justify-content: start;
 }
 
 .foot-item h2 {
@@ -299,6 +370,7 @@ footer {
     padding: 10px;
     font-family: 'Krub', sans-serif;
     font-weight: 400;
+    line-height: normal;
 }
 
 .foot-item li a {
@@ -341,7 +413,6 @@ hr {
 
 .license {
     padding: 20px 100px;
-    color: #fff;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -352,6 +423,7 @@ hr {
 
 .license p {
     display: inline-block;
+    color: #fff;
 }
 
 .lists {
@@ -423,6 +495,7 @@ hr {
         width: 100px;
         text-align: center;
     }
+
     .social-btn .social {
         display: flex;
         justify-content: center;
@@ -439,13 +512,16 @@ hr {
     .subhead.head-foot {
         align-items: center;
     }
+
     .foot-item {
         width: auto;
         align-items: center;
     }
+
     .foot-item ul {
         flex-direction: column;
     }
+
     .subscribe {
         display: flex;
         flex-direction: column;
