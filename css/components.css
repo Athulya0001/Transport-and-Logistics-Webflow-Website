@@ -23,7 +23,7 @@
 .test-head span {
     background-color: #E8E8E880;
     border-left: 3px solid transparent;
-    border-image: linear-gradient(to bottom, #FFB629,#FFDA56, #FFD7A6) 1;    
+    border-image: linear-gradient(to bottom, #FFB629, #FFDA56, #FFD7A6) 1;
     padding: 2px 8px;
     font-size: 14px;
     font-weight: 400;
@@ -53,7 +53,7 @@
     background-color: #091242;
 }
 
-.review:nth-child(2) p ,
+.review:nth-child(2) p,
 .review:nth-child(2) h6 {
     color: #fff;
 }
@@ -105,7 +105,7 @@
     color: #1C1F35;
     background-color: #E8E8E880;
     border-left: 3px solid transparent;
-    border-image: linear-gradient(to bottom, #FFB629,#FFDA56, #FFD7A6) 1;
+    border-image: linear-gradient(to bottom, #FFB629, #FFDA56, #FFD7A6) 1;
     width: fit-content;
     padding: 2px 8px;
     font-size: 14px;
@@ -196,7 +196,7 @@
     font-family: 'Krub', sans-serif;
     background-color: #E8E8E880;
     border-left: 3px solid transparent;
-    border-image: linear-gradient(to bottom, #FFB629,#FFDA56, #FFD7A6) 1;
+    border-image: linear-gradient(to bottom, #FFB629, #FFDA56, #FFD7A6) 1;
     padding: 2px 8px;
     font-size: 14px;
     font-weight: 400;
@@ -207,7 +207,8 @@
     display: inline;
     background-color: #E8E8E880;
     border-left: 3px solid transparent;
-    border-image: linear-gradient(to bottom, #FFB629,#FFDA56, #FFD7A6) 1;    padding: 2px 8px;
+    border-image: linear-gradient(to bottom, #FFB629, #FFDA56, #FFD7A6) 1;
+    padding: 2px 8px;
     font-size: 14px;
     font-weight: 400;
 }
@@ -280,6 +281,10 @@
 
 .service-container {
     margin: 0 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .service-grid {
@@ -342,6 +347,7 @@
 
 .pricing-container {
     margin: 40px 100px;
+    overflow: hidden;
 }
 
 .pricing-grid {
@@ -373,7 +379,17 @@
 
 #blue-bg {
     background-color: #091242;
+}
+
+#blue-bg,
+#blue-bg h1,
+#blue-bg h2,
+#blue-bg span {
     color: #fff;
+}
+
+#blue-bg .explore-btn span {
+    color: #1C1F35;
 }
 
 .feature-div {
@@ -385,6 +401,53 @@
 
 .feature-div:nth-child(6) {
     border-bottom: 0.2px solid;
+}
+
+@media screen and (max-width:1190px) {
+    .pricing-grid {
+        gap: 25px;
+    }
+
+    .price-box {
+        padding: 30px;
+    }
+
+    .price-box h1 {
+        font-size: 55px;
+    }
+
+    .price-box h2 {
+        font-size: 30px;
+    }
+
+    .feature-div {
+        padding: 20px 30px;
+    }
+}
+
+@media screen and (max-width:1000px) {
+    .pricing-grid {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .price-box h1 {
+        font-size: 75px;
+    }
+
+    .price-box h2 {
+        font-size: 45px;
+    }
+}
+
+@media screen and (max-width:580px) {
+    .price-box h1 {
+        font-size: 55px;
+    }
+
+    .price-box h2 {
+        font-size: 30px;
+    }
 }
 
 /* End of price section */
@@ -437,3 +500,114 @@
 }
 
 /* Yellow Gradient Button ends here */
+
+/* FAQ section */
+
+.faq {
+    background:
+        linear-gradient(to right, #f4f4f4 70%, transparent 30%),
+        url(../images/faq-bg.png) right center / cover no-repeat;
+    padding: 30px 0;
+    height: auto;
+}
+
+.faq-container {
+    margin: 0 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 80px;
+}
+
+.faq-box {
+    display: flex;
+    justify-content: space-between;
+}
+
+.faq-box h6 {
+    line-height: 100%;
+    font-weight: 400;
+}
+
+.faq-image {
+    position: relative;
+    width: 100%;
+    max-width: 900px;
+    overflow: hidden;
+    padding: 30px;
+}
+
+.faq-image h6 {
+    color: #fff;
+    padding: 10px 0;
+}
+
+.content-box {
+    background-color: #091242;
+    color: #fff;
+    padding: 50px 65px;
+    width: auto;
+    z-index: 2;
+}
+
+.call {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.number {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.number p {
+    color: #fff;
+}
+
+@media screen and (max-width:1190px) {
+    .faq {
+        background: #f4f4f4;
+    }
+
+    .faq-container {
+        gap: 40px;
+    }
+
+    .content-box {
+        padding: 30px 40px;
+    }
+
+    .call {
+        flex-direction: column;
+    }
+
+    .number {
+        align-items: center;
+    }
+}
+
+@media screen and (max-width:1044px) {
+    .faq-container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .content-box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .faq-content .section-head,
+    .content-box .section-head,
+    .content-box .explore-btn {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+}
+
+/* End of FAQ section */

@@ -113,7 +113,7 @@ header {
 }
 
 @media screen and (max-width:1190px) {
-    .service-section {
+    .services {
         display: flex;
         margin-top: 60px;
         flex-direction: column;
@@ -131,7 +131,7 @@ header {
 
 @media screen and (max-width:580px) {
 
-    .service-section {
+    .services {
         margin: 60px 25px;
     }
 
