@@ -550,17 +550,6 @@ header {
     font-weight: 600;
 }
 
-.client-container {
-    overflow: hidden;
-    grid-column: 1 / 3;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-}
-
-.client-container img {
-    width: 100%;
-}
-
 @media screen and (max-width:1190px) {
     .form-container {
         display: flex;

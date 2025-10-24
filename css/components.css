@@ -567,6 +567,14 @@
     color: #fff;
 }
 
+.border {
+    border: 1px solid rgba(0, 0, 0, 0.4);
+}
+.border img {
+    width: 100%;
+    height: 100%;
+}
+
 @media screen and (max-width:1190px) {
     .faq {
         background: #f4f4f4;
@@ -611,3 +619,18 @@
 }
 
 /* End of FAQ section */
+
+/* Client logo section */
+
+.client-container {
+    overflow: hidden;
+    grid-column: 1 / 3;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.client-container img {
+    width: 100%;
+}
+
+/* End of client logo section */
