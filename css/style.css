@@ -27,7 +27,7 @@ h6 {
     font-family: 'Rubik', sans-serif;
     color: #1c1f35;
     font-weight: 500;
-    text-transform: capitalize;
+    text-transform: none;
 }
 
 h1 {
@@ -66,6 +66,7 @@ h6 {
 }
 
 p {
+    font-family: 'Krub', sans-serif;
     color: #666c89;
     font-weight: 500;
     font-size: 16px;

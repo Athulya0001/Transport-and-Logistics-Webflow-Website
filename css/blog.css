@@ -1,3 +1,5 @@
+/* Banner section */
+
 header {
     background-image: url('../images/Blog-background.png');
     background-size: cover;
@@ -9,8 +11,6 @@ header {
     position: absolute;
     top: 280px;
     left: 300px;
-    color: #fff;
-    font-family: 'Rubik', sans-serif;
 }
 
 .blog-banner p {
@@ -24,4 +24,190 @@ header {
 .blog-banner h1 {
     font-weight: 700;
     font-size: 60px;
+}
+
+.calender {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    gap: 10px;
+}
+
+.date {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.date h2,
+.date span,
+.sub-content h1 {
+    color: #fff;
+    text-transform: none;
+}
+
+@media screen and (max-width:1190px) {
+    .blog-banner {
+        top: 300px;
+        left: 280px;
+    }
+
+    .sub-content h1 {
+        font-size: 45px;
+    }
+}
+
+@media screen and (max-width:780px) {
+    header {
+        height: max-content;
+    }
+
+    .blog-banner {
+        position: static;
+        margin: auto 100px;
+    }
+
+    .sub-content h1 {
+        font-size: 40px;
+    }
+}
+
+/* End of banner section */
+
+/* Blog section */
+
+.blog {
+    margin: 60px 100px;
+}
+
+.blog-container {
+    width: 60%;
+    float: left;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.side-bar {
+    width: 35%;
+    float: right;
+}
+
+.categories,
+.help,
+.contact-box {
+    background-color: #F5F5F5;
+    padding: 40px;
+    margin-bottom: 45px;
+}
+
+.categories .item {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    padding-left: 0;
+    font-family: 'Rubik', sans-serif;
+    border-bottom: 1px solid #D6D6D6;
+}
+
+.help {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.item h6 {
+    color: #666C89;
+    font-weight: 400;
+}
+
+.help h6 {
+    font-weight: 600;
+}
+
+.contact-btn {
+    background-image: linear-gradient(to right, #FFB629, #FFDA56, #FFD7A6);
+    padding: 20px 40px;
+    font-weight: 600;
+    width: fit-content;
+}
+
+.contact-box {
+    background-color: #091242;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.contact-box h5 {
+    border-left: 3px solid transparent;
+    border-image: linear-gradient(to bottom, #FFB629, #FFDA56, #FFD7A6) 1;
+    color: #fff;
+    font-weight: 600;
+    padding:0 12px;
+}
+
+.help-id {
+    display: flex;
+    flex-direction: column;
+}
+
+.comments {
+    background-color: #091242;
+    color: #fff;
+    padding: 50px 55px;
+    font-family: 'Rubik',sans-serif;
+    font-style: italic;
+    font-size: 20px;
+}
+
+.blog-container figcaption {
+    text-align: center;
+    color: #666C89;
+    font-weight: 500;
+}
+
+.follow {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #D6D6D6;
+    border-bottom: 1px solid #D6D6D6;   
+    padding: 20px 0;
+}
+
+.follow-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    cursor: pointer;
+}
+
+.group::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+@media screen and (max-width:950px) {
+    .blog-container {
+        float: none;
+        width: 100%;
+    }
+    .side-bar {
+        margin-top: 30px;
+        float: none;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:580px) {
+    .follow {
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+    }
 }
