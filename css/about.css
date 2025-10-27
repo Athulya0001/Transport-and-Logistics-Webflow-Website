@@ -75,7 +75,7 @@ p {
 /* About section */
 
 .about {
-    margin: 50px 150px 50px 80px;
+    margin: 50px 200px 50px 80px;
     display: flex;
     justify-content: center;
     width: auto;
@@ -111,13 +111,18 @@ p {
 @media screen and (max-width:1190px) {
     .about {
         flex-direction: column-reverse;
-        margin: 50px 100px;
+        margin: 50px 150px;
     }
 }
 
 @media screen and (max-width:780px) {
     .about img {
         display: none;
+    }
+}
+@media screen and (max-width:580px) {
+    .about {
+        margin: 50px 100px;
     }
 }
 

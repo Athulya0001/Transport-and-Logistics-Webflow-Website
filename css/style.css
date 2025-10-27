@@ -101,7 +101,7 @@ textarea::placeholder {
 .subhead {
     display: flex;
     justify-content: space-between;
-    margin: auto 100px;
+    margin: auto 200px;
 }
 
 .logo {
@@ -167,6 +167,10 @@ textarea::placeholder {
 }
 
 @media only screen and (max-width:780px) {
+    .subhead {
+        margin: auto 150px;
+    }
+
     header {
         height: auto;
     }
@@ -192,6 +196,9 @@ textarea::placeholder {
 }
 
 @media only screen and (max-width:560px) {
+    .subhead {
+        margin: auto 100px;
+    }
     header {
         height: auto;
         overflow: hidden;
@@ -212,7 +219,7 @@ textarea::placeholder {
 }
 
 .main-menu {
-    margin: 0 100px;
+    margin: 0 200px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -270,6 +277,9 @@ textarea::placeholder {
 }
 
 @media only screen and (max-width:780px) {
+    .main-menu {
+        margin: 0 150px;
+    }
     .menu ul li {
         background-color: rgba(183, 182, 182, 0.5);
         padding: 10px;
@@ -281,6 +291,9 @@ textarea::placeholder {
 }
 
 @media only screen and (max-width:560px) {
+    .main-menu {
+        margin: 0 100px;
+    }
     .links {
         flex-direction: column;
     }
@@ -313,7 +326,7 @@ footer {
 
 .foot-head {
     box-sizing: border-box;
-    margin: auto 100px;
+    margin: auto 200px;
 }
 
 .foot-head .logo {
@@ -417,7 +430,7 @@ hr {
 }
 
 .license {
-    padding: 20px 100px;
+    padding: 20px 200px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -528,6 +541,10 @@ hr {
         align-items: center;
     }
 
+    .foot-head {
+        margin: auto 150px;
+    }
+
     .foot-head .logo {
         justify-content: center;
     }
@@ -549,6 +566,10 @@ hr {
     .subscribe {
         display: flex;
         flex-direction: column;
+    }
+
+    .license {
+        padding: 20px 100px;
     }
 }
 

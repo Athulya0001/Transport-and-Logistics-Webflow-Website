@@ -56,7 +56,7 @@ header {
 /* Service section */
 
 .services {
-    margin: 60px 100px;
+    margin: 60px 200px;
     display: grid;
     grid-template-columns: 1fr 2.5fr;
     grid-template-rows: repeat(2, 1fr);
@@ -114,6 +114,7 @@ header {
 
 @media screen and (max-width:1190px) {
     .services {
+        margin: 60px 150px;
         display: flex;
         margin-top: 60px;
         flex-direction: column;
@@ -132,7 +133,7 @@ header {
 @media screen and (max-width:580px) {
 
     .services {
-        margin: 60px 25px;
+        margin: 60px 100px;
     }
 
     .subcontent {
@@ -155,7 +156,7 @@ header {
 }
 
 .about-content {
-    margin: 0px 100px;
+    margin: 0px 200px;
     margin-top: 150px;
     background-color: white;
     padding: 60px;
@@ -231,6 +232,7 @@ header {
 
     .about-content {
         flex-direction: column;
+        margin: 0 150px;
     }
 
     .img-box {
@@ -259,6 +261,7 @@ header {
 
 @media screen and (max-width:580px) {
     .about-content {
+        margin: 0 100px;
         flex-direction: column;
         width: auto;
         gap: 10px;
@@ -299,7 +302,7 @@ header {
 }
 
 .img-grid {
-    margin: auto 100px;
+    margin: auto 200px;
     width: 87%;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -412,7 +415,7 @@ header {
 }
 
 .choose-container {
-    margin: 100px;
+    margin: 100px 200px;
     display: flex;
     gap: 40px;
     justify-content: center;
@@ -445,6 +448,10 @@ header {
 }
 
 @media screen and (max-width:780px) {
+    .choose-container {
+        margin: 100px 150px;
+    }
+
     .choose {
         background: #F4F4F4;
     }
@@ -467,7 +474,7 @@ header {
 }
 
 .contact-container {
-    margin: 0 100px;
+    margin: 0 200px;
     padding: 50px 0;
     color: #fff;
     display: grid;
@@ -505,12 +512,14 @@ header {
 
 @media screen and (max-width:780px) {
     .contact-container {
+        margin: 0 150px;
         display: flex;
         flex-direction: column;
     }
 
     .contact-head .addressbar {
-        flex-direction: row;
+        align-items: center;
+        justify-content: center;
     }
 }
 
@@ -519,7 +528,7 @@ header {
 /* Blog section */
 
 .blog-section {
-    margin: 50px 120px;
+    margin: 50px 200px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -603,7 +612,7 @@ header {
 
 @media screen and (max-width:1190px) {
     .blog-section {
-        margin: 50px 100px;
+        margin: 50px 150px;
     }
 
     .blog-box {
@@ -655,6 +664,9 @@ header {
 }
 
 @media screen and (max-width:580px) {
+    .blog-section {
+        margin: 50px 100px;
+    }
     .calender {
         flex-direction: column;
     }
