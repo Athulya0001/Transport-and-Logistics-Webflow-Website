@@ -9,7 +9,7 @@ header {
     background-blend-mode: overlay;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 650px;
+    height: 900px;
 }
 
 p {
@@ -19,9 +19,7 @@ p {
 
 .price-banner {
     overflow: hidden;
-    position: absolute;
-    top: 280px;
-    left: 200px;
+    margin: 100px 200px;
     font-family: 'Rubik', sans-serif;
 }
 
@@ -42,24 +40,21 @@ p {
     color: #fff;
 }
 
-@media screen and (min-width:1500px) {
-    header {
-        height: 900px;
+@media screen and (min-width:1600px) {
+    .price-banner {
+        margin: 100px 360px;
     }
 }
 
-@media screen and (max-width:1190px) {
-    .price-banner {
-        top: 350px;
-        left: 200px;
+@media screen and (max-width:1599px) {
+    header {
+        height: 650px;
     }
 }
 
 @media screen and (max-width:780px) {
     .price-banner {
-        top: 420px;
-        left: auto;
-        margin: auto 100px;
+        margin: 50px 150px;
     }
 
     .sub-content h1 {
@@ -72,7 +67,7 @@ p {
         height: max-content;
     }
     .price-banner {
-        position: static;
+        margin: 50px 100px;
     }
 }
 

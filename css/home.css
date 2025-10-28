@@ -7,14 +7,17 @@
 
 header {
     background-image: url('../images/Home-BG.jpg');
+    height: 1000px;
 }
 
 .banner-content {
+    margin: 100px 200px;
     overflow: hidden;
     width: 560px;
-    position: absolute;
-    top: 320px;
-    left: 200px;
+    /* height: max-content; */
+    /* position: absolute; */
+    /* top: 320px; */
+    /* left: 200px; */
 }
 
 #head-span {
@@ -42,12 +45,30 @@ header {
     text-align: justify;
 }
 
-@media only screen and (max-width:1190px) {
+@media screen and (min-width:1600px) {
     .banner-content {
-        position: static;
-        width: 90%;
-        margin: auto;
+        margin: 100px 360px;
+    }
+}
+
+@media only screen and (max-width:1190px) {
+    header {
+        height: fit-content;
+    }
+}
+
+@media screen and (max-width:780px) {
+    .banner-content {
+        width: auto;
+        margin: 100px 150px;
         padding: 0 40px;
+    }
+}
+
+@media screen and (max-width:580px) {
+    .banner-content {
+        margin: 100px auto;
+        width: fit-content;
     }
 }
 
@@ -112,9 +133,14 @@ header {
     padding: 0px 10px;
 }
 
+@media screen and (min-width:1600px) {
+    .services {
+        margin: 100px 360px;
+    }
+}
+
 @media screen and (max-width:1190px) {
     .services {
-        margin: 60px 150px;
         display: flex;
         margin-top: 60px;
         flex-direction: column;
@@ -125,6 +151,10 @@ header {
 }
 
 @media screen and (max-width:880px) {
+    .services {
+        margin: 60px 150px;
+    }
+
     .service-content {
         flex-direction: column;
     }
@@ -157,25 +187,14 @@ header {
 }
 
 .about-content {
-    margin: 0px 200px;
-    margin-top: 150px;
+    margin: 200px;
+    margin-bottom: 100px;
     background-color: white;
     padding: 60px;
     display: flex;
     justify-content: center;
     gap: 60px;
     box-shadow: 0 -10px -15px rgba(0, 0, 0, 0.5);
-}
-
-.img-box {
-    position: relative;
-}
-
-.img-box img:nth-child(2) {
-    position: absolute;
-    left: -98px;
-    bottom: -42px;
-    z-index: 100;
 }
 
 .icon {
@@ -189,7 +208,6 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 60px;
     box-sizing: border-box;
 }
 
@@ -219,6 +237,20 @@ header {
     font-weight: 400;
 }
 
+@media screen and (min-width:1600px) {
+    .about-content {
+        margin: 360px;
+        margin-bottom: 100px;
+    }
+}
+
+@media screen and (max-width:1500px) {
+    .img-box img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
 @media screen and (max-width:1190px) {
     .about-content {
         flex-direction: column;
@@ -233,7 +265,7 @@ header {
 
     .about-content {
         flex-direction: column;
-        margin: 0 150px;
+        margin: 50px 150px;
     }
 
     .img-box {
@@ -262,7 +294,7 @@ header {
 
 @media screen and (max-width:580px) {
     .about-content {
-        margin: 0 100px;
+        margin: 50px 100px;
         flex-direction: column;
         width: auto;
         gap: 10px;
@@ -287,57 +319,57 @@ header {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    background: linear-gradient(to bottom, #fff 50%, transparent 50%), linear-gradient(to right, #FFB629, #FFDA56, #FFD7A6);
     padding: 50px 0;
     margin-bottom: 80px;
-    height: auto;
-    width: 100%;
-    background: url(../images/Group\ 1.png);
-    background-size: cover;
+    overflow-x: hidden;
+    width: auto;
 }
 
-.projects h2 {
+.project-section {
+    margin: auto 200px;
+    width: 70%;
+}
+
+.project-section h3 {
     font-weight: 600;
     font-family: 'Rubik', sans-serif;
-    font-size: 35px;
     text-align: center;
+    margin-bottom: 20px;
 }
 
 .img-grid {
-    margin: auto 200px;
-    width: 87%;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    gap: 25px;
+    gap: 10px;
 }
 
 .grid-box {
-    margin-top: 20px;
     height: 350px;
+    padding: 0 40px;
     position: relative;
-    z-index: 100;
-    overflow: hidden;
-    font-weight: 500;
 }
 
 .grid1 {
     width: 100%;
     padding: 20px;
+    box-sizing: border-box;
     position: absolute;
-    bottom: 0;
     left: 0;
-    background-color: rgba(0, 0, 0, 0.5);
-    box-shadow: inset -10px 10px 40px rgba(0, 0, 0, 0.7), 10px -10px 35px rgba(0, 0, 0, 0.7);
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.3);
 }
 
 .grid1 p {
     color: #fff;
     font-size: 20px;
-    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
+    line-height: 100%;
 }
 
 .grid1 span {
     color: #FFB629;
-    font-family: 'Krub', sans-serif;
+    font-weight: 500;
 }
 
 .grid-box:nth-child(1) {
@@ -370,21 +402,34 @@ header {
     background-size: cover;
 }
 
-@media only screen and (max-width:1190px) {
+.button {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
-    .grid-box {
-        height: 300px;
+@media screen and (min-width:1600px) {
+    .project-section {
+        margin: auto 360px;
     }
+}
 
+@media screen and (max-width:1400px) {
+    .img-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media screen and (max-width:1190px) {
     .img-grid {
         grid-template-columns: repeat(3, 1fr);
     }
 }
 
-@media screen and (max-width:780px) {
-    .projects {
-        margin-top: 40px;
-        height: auto;
+@media screen and (max-width:880px) {
+    .project-section {
+        margin: auto 150px;
     }
 
     .img-grid {
@@ -392,11 +437,9 @@ header {
     }
 }
 
-@media screen and (max-width:580px) {
-    .projects {
-        margin-top: 40px;
-        height: auto;
-        padding: 20px;
+@media screen and (max-width:680px) {
+    .project-section {
+        margin: auto 100px;
     }
 
     .img-grid {
@@ -412,11 +455,11 @@ header {
     background-image: linear-gradient(to right, #091242 50%, #f4f4f4 50%);
     height: auto;
     margin: 40px 0;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 .choose-container {
-    margin: 100px;
+    margin: 100px 200px;
     display: flex;
     gap: 40px;
     justify-content: center;
@@ -444,18 +487,25 @@ header {
     gap: 20px;
 }
 
-@media screen and (min-width:1700px) {
-    .choose-container{
-        margin: 100px 200px;
+@media screen and (min-width:1600px) {
+    .choose-container {
+        margin: 100px 360px;
+    }
+    .img-container {
+        width: 65%;
+    }
+    .img-container img {
+        width: 100%;
     }
 }
 
-@media screen and (max-width:1699px) {
+@media screen and (max-width:1599px) {
     .choose-container {
         gap: 80px;
     }
+
     .img-container,
-    .choose-content{
+    .choose-content {
         width: fit-content;
     }
 }
@@ -496,6 +546,7 @@ header {
 
 .contact-section {
     background-color: #091242;
+    overflow: hidden;
 }
 
 .contact-container {
@@ -535,6 +586,12 @@ header {
     gap: 39px;
 }
 
+@media screen and (min-width:1600px) {
+    .contact-container {
+        margin: 0 360px;
+    }
+}
+
 @media screen and (max-width:780px) {
     .contact-container {
         margin: 0 150px;
@@ -548,11 +605,18 @@ header {
     }
 }
 
+@media screen and (max-width:580px) {
+    .contact-container {
+        margin: 0 100px;
+    }
+}
+
 /* End of contact section */
 
 /* Blog section */
 
 .blog-section {
+    overflow: hidden;
     margin: 50px 200px;
     display: flex;
     flex-direction: column;
@@ -692,8 +756,18 @@ header {
     .blog-section {
         margin: 50px 100px;
     }
+    .blog-box {
+        grid-template-columns: 1fr;
+    }
     .calender {
-        flex-direction: column;
+        grid-column: 1;
+    }
+    .blog-box img {
+        grid-column: 1;
+        grid-row: 2;
+    }
+    .blog-content {
+        grid-row: 3;
     }
 }
 

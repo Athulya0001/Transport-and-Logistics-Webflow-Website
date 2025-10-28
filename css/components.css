@@ -3,6 +3,7 @@
 .bg-grey {
     background-color: #F4F4F4;
     padding: 50px 0;
+    overflow: hidden;
 }
 
 .testimonial {
@@ -76,6 +77,12 @@
     gap: 10px;
 }
 
+@media screen and (min-width:1600px) {
+    .testimonial {
+        margin: 40px 360px;
+    }
+}
+
 @media screen and (max-width:1190px) {
     .testimonial {
         margin: 40px 150px;
@@ -99,7 +106,6 @@
 /* Team section */
 
 .team {
-    margin: 100px;
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -128,9 +134,13 @@
 }
 
 .team-members {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    margin: 50px 200px;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     gap: 20px;
+    box-sizing: border-box;
 }
 
 .members {
@@ -161,6 +171,12 @@
     right: 0;
 }
 
+@media screen and (min-width:1600px) {
+    .team {
+        margin: 50px 360px;
+    }
+}
+
 @media screen and (max-width:1190px) {
     .team {
         align-items: center;
@@ -168,7 +184,7 @@
     }
 
     .team-members {
-        grid-template-columns: 1fr;
+        flex-direction: column;
     }
 
     .members {
@@ -287,7 +303,7 @@
 .service-section {
     margin: 50px 0;
     background-color: #F4F4F4;
-    padding: 50px 0;
+    padding: 100px 0;
 }
 
 .service-container {
@@ -325,9 +341,15 @@
     font-weight: 400;
 }
 
+@media screen and (min-width:1600px) {
+    .service-container {
+        margin: 0 360px;
+    }
+}
+
 @media screen and (max-width:1190px) {
     .service-container {
-        margin: 0 50px;
+        margin: 0 150px;
     }
 }
 
@@ -357,11 +379,12 @@
 /* Pricing section */
 
 .pricing-container {
-    margin: 40px 100px;
+    margin: 40px 200px;
     overflow: hidden;
 }
 
 .pricing-grid {
+    margin-top: 50px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
@@ -414,7 +437,13 @@
     border-bottom: 0.2px solid;
 }
 
-@media screen and (max-width:1190px) {
+@media screen and (min-width:1600px) {
+    .pricing-container {
+        margin: 40px 360px;
+    }
+}
+
+@media screen and (max-width:1490px) {
     .pricing-grid {
         gap: 25px;
     }
@@ -424,7 +453,7 @@
     }
 
     .price-box h1 {
-        font-size: 55px;
+        font-size: 50px;
     }
 
     .price-box h2 {
@@ -434,13 +463,10 @@
     .feature-div {
         padding: 20px 30px;
     }
+
 }
 
-@media screen and (max-width:1000px) {
-    .pricing-container {
-        margin: 40px 200px;
-    }
-
+@media screen and (max-width:1190px) {
     .pricing-grid {
         display: flex;
         flex-direction: column;
@@ -452,6 +478,31 @@
 
     .price-box h2 {
         font-size: 45px;
+    }
+
+
+    .price-box .more-btn {
+        width: 150px;
+    }
+
+    .price-box .more-btn::after {
+        left: 115px;
+    }
+
+    .price-box .more-btn:hover::after {
+        left: 80px;
+    }
+
+    .price-box .explore-btn {
+        width: 150px;
+    }
+
+    .price-box .explore-btn::after {
+        left: 115px;
+    }
+
+    .price-box .explore-btn:hover::after {
+        left: 80px;
     }
 }
 
@@ -537,7 +588,7 @@
 }
 
 .faq-container {
-    margin: 0 150px;
+    margin: 0 190px;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -557,9 +608,8 @@
 .faq-image {
     position: relative;
     width: 100%;
-    max-width: 900px;
     overflow: hidden;
-    padding: 30px;
+    padding: 30px 0;
 }
 
 .faq-image h6 {
@@ -601,7 +651,31 @@
     height: 100%;
 }
 
+@media screen and (min-width:1600px) {
+    .faq-container {
+        margin: 0 360px;
+    }
+}
+
+@media screen and (max-width:1440px) {
+    .content-box .explore-btn {
+        width: 150px;
+    }
+
+    .content-box .explore-btn::after {
+        left: 115px;
+    }
+
+    .content-box .explore-btn:hover::after {
+        left: 80px;
+    }
+}
+
 @media screen and (max-width:1190px) {
+    .faq-container {
+        margin: 0 150px;
+    }
+
     .faq {
         background: #f4f4f4;
     }
@@ -645,6 +719,12 @@
     }
 }
 
+@media screen and (max-width:580px) {
+    .faq-container {
+        margin: 0 100px;
+    }
+}
+
 /* End of FAQ section */
 
 /* client section */
@@ -652,8 +732,6 @@
 .clients {
     margin: 30px 200px;
 }
-
-/* end of client section */
 
 .client-container {
     overflow: hidden;
@@ -666,6 +744,12 @@
     width: 100%;
 }
 
+@media screen and (min-width:1600px) {
+    .clients {
+        margin: 30px 360px;
+    }
+}
+
 @media screen and (max-width:780px) {
     .clients {
         margin: 30px 150px;
@@ -676,12 +760,17 @@
     .clients {
         margin: 30px 100px;
     }
+    .client-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
 }
 
 /* End of client logo section */
 
 /* Contact form section */
-
 
 .form-container {
     display: grid;

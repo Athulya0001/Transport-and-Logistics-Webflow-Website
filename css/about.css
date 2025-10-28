@@ -9,7 +9,7 @@ header {
     background-blend-mode: overlay;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 650px;
+    height: 900px;
 }
 
 p {
@@ -19,9 +19,7 @@ p {
 
 .about-banner {
     overflow: hidden;
-    position: absolute;
-    top: 280px;
-    left: 200px;
+    margin: 100px 200px;
     font-family: 'Rubik', sans-serif;
 }
 
@@ -42,24 +40,21 @@ p {
     color: #fff;
 }
 
-@media screen and (min-width:1500px) {
-    header {
-        height: 900px;
+@media screen and (min-width:1600px) {
+    .about-banner {
+        margin: 100px 360px;
     }
 }
 
-@media screen and (max-width:1190px) {
-    .about-banner {
-        top: 350px;
-        left: 200px;
+@media screen and (max-width:1600px) {
+    header {
+        height: 650px;
     }
 }
 
 @media screen and (max-width:780px) {
     .about-banner {
-        top: 420px;
-        left: auto;
-        margin: auto 100px;
+        margin: auto 150px;
     }
 
     .sub-content h1 {
@@ -72,7 +67,7 @@ p {
         height: max-content;
     }
     .about-banner {
-        position: static;
+        margin: auto 100px;
     }
 }
 
@@ -81,7 +76,7 @@ p {
 /* About section */
 
 .about {
-    margin: 50px 200px 50px 80px;
+    margin: 50px 200px 50px 100px;
     display: flex;
     justify-content: center;
     width: auto;
@@ -114,14 +109,23 @@ p {
     justify-content: flex-start;
 }
 
+@media screen and (min-width:1600px) {
+    .about {
+        margin: 50px 360px;
+    }
+}
+
 @media screen and (max-width:1190px) {
     .about {
         flex-direction: column-reverse;
-        margin: 50px 150px;
+        margin: 50px 200px;
     }
 }
 
 @media screen and (max-width:780px) {
+    .about {
+        margin: 50px 150px;
+    }
     .about img {
         display: none;
     }
@@ -129,6 +133,9 @@ p {
 @media screen and (max-width:580px) {
     .about {
         margin: 50px 100px;
+    }
+    .approch-btn {
+        flex-direction: column;
     }
 }
 

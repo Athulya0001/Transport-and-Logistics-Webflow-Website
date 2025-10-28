@@ -3,14 +3,12 @@
 header {
     background-image: url('../images/Blog-background.png');
     background-size: cover;
-    height: 650px;
+    height: 900px;
 }
 
 .blog-banner {
     overflow: hidden;
-    position: absolute;
-    top: 280px;
-    left: 200px;
+    margin: 100px 200px;
 }
 
 .blog-banner p {
@@ -46,18 +44,16 @@ header {
     text-transform: none;
 }
 
-@media screen and (min-width:1500px) {
+@media screen and (min-width:1600px) {
     header {
-        height: 900px;
+        height: 650px;
+    }
+    .blog-banner {
+        margin: 100px 360px;
     }
 }
 
 @media screen and (max-width:1190px) {
-    .blog-banner {
-        top: 300px;
-        left: 200px;
-    }
-
     .sub-content h1 {
         font-size: 45px;
     }
@@ -69,8 +65,7 @@ header {
     }
 
     .blog-banner {
-        position: static;
-        margin: auto 150px;
+        margin: 50px 150px;
     }
 
     .sub-content h1 {
@@ -80,7 +75,7 @@ header {
 
 @media screen and (max-width:580px) {
     .blog-banner {
-        margin: auto 50px;
+        margin: 50px 100px;
     }
 }
 
@@ -211,11 +206,13 @@ header {
     display: table;
 }
 
-@media screen and (max-width:950px) {
+@media screen and (min-width:1600px) {
     .blog {
-        margin: 60px 150px;
+        margin: 60px 360px;
     }
+}
 
+@media screen and (max-width:1190px) {
     .blog-container {
         float: none;
         width: 100%;
@@ -225,6 +222,12 @@ header {
         margin-top: 30px;
         float: none;
         width: 100%;
+    }
+}
+
+@media screen and (max-width:780px){
+    .blog{
+        margin: 60px 150px;
     }
 }
 

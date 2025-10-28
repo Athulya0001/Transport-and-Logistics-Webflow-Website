@@ -9,6 +9,7 @@ body {
 }
 
 header {
+    overflow: hidden;
     display: flex;
     position: relative;
     flex-direction: column;
@@ -147,6 +148,12 @@ textarea::placeholder {
     line-height: 135%;
 }
 
+@media screen and (min-width:1600px) {
+    .subhead {
+        margin: auto 360px;
+    }
+}
+
 @media screen and (min-width:1191px) {
     header {
         height: 110vh;
@@ -271,6 +278,12 @@ textarea::placeholder {
     color: #1c1f35;
 }
 
+@media screen and (min-width:1600px) {
+    .main-menu {
+        margin: 0 360px;
+    }
+}
+
 @media only screen and (max-width:1190px) {
     .main-menu {
         flex-direction: column;
@@ -309,6 +322,10 @@ textarea::placeholder {
 /* End of Menu header */
 
 /* Footer section */
+
+#bg-img{
+    width: 100%;
+}
 
 footer {
     display: flex;
@@ -431,7 +448,7 @@ hr {
 }
 
 .license {
-    padding: 20px 200px;
+    margin: 20px 200px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -452,6 +469,15 @@ hr {
     gap: 20px;
     font-weight: 400;
     color: #8388A7;
+}
+
+@media screen and (min-width:1600px) {
+    .foot-head {
+        margin: auto 360px;
+    }
+    .license {
+        margin: 20px 360px;
+    }
 }
 
 @media screen and (min-width:1191px) {
@@ -576,7 +602,7 @@ hr {
     }
 
     .license {
-        padding: 20px 100px;
+        margin: 20px 100px;
     }
 }
 
