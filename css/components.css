@@ -587,6 +587,10 @@
     height: auto;
 }
 
+.content-box .section-head span {
+    background-color: rgba(255, 255, 255, 0.06);
+}
+
 .faq-container {
     margin: 0 190px;
     display: flex;
@@ -632,6 +636,10 @@
     margin-top: 15px;
 }
 
+.call svg:hover path {
+    stroke: #FFB629;
+}
+
 .number {
     display: flex;
     justify-content: center;
@@ -640,6 +648,11 @@
 
 .number p {
     color: #fff;
+}
+
+.number:hover p:nth-child(2) {
+    color: #FFB629;
+    cursor: pointer;
 }
 
 .border {
@@ -808,6 +821,7 @@
 
 .form-input input[type='submit'] {
     width: auto;
+    color: #1C1F35;
     display: inline-block;
     background-image: linear-gradient(to right, #FFB629, #FFDA56, #FFD7A6);
     background-repeat: no-repeat;
@@ -817,6 +831,11 @@
     cursor: pointer;
     font-family: 'Krub', sans-serif;
     font-weight: 600;
+}
+
+.form-input input[type="submit"]:hover {
+    background: #fff;
+    border-radius: 3px;
 }
 
 @media screen and (max-width:1190px) {

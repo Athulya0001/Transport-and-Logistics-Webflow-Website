@@ -98,9 +98,15 @@ p {
     width: max-content;
     padding: 15px 30px;
     background-color: #F4F4F4;
+    cursor: pointer;
 }
 
 .btn-box:nth-child(1) {
+    background-color: #FFB82B;
+    color: #fff;
+}
+
+.btn-box:hover {
     background-color: #FFB82B;
     color: #fff;
 }

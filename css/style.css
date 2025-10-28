@@ -80,11 +80,15 @@ li {
     line-height: 327%;
 }
 
-input::placeholder {
+input,
+textarea {
     color: #fff;
     font-family: 'Krub', sans-serif;
+    border: none;
+    outline: none;
 }
 
+input::placeholder,
 textarea::placeholder {
     color: #fff;
     font-family: 'Krub', sans-serif;
@@ -100,11 +104,11 @@ textarea::placeholder {
 }
 
 .address svg path {
-  transition: stroke 0.3s ease;
+    transition: stroke 0.3s ease;
 }
 
 .address svg:hover path {
-  stroke: #fff;
+    stroke: #fff;
 }
 
 /* Main header */

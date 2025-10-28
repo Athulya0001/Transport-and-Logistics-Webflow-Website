@@ -135,6 +135,14 @@ p {
     color: #fff;
 }
 
+.connect svg:hover path {
+    stroke: #FFB629;
+}
+
+.connect span:hover {
+    color: #FFB629;
+}
+
 /* Submit button */
 
 #submit-btn {
