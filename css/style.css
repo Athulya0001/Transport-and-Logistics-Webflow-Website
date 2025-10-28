@@ -134,6 +134,7 @@ textarea::placeholder {
 }
 
 .address {
+    cursor: pointer;
     display: flex;
     gap: 10px;
     justify-content: center;
@@ -451,6 +452,12 @@ hr {
     gap: 20px;
     font-weight: 400;
     color: #8388A7;
+}
+
+@media screen and (min-width:1191px) {
+    .foot-box {
+        width: 40%;
+    }
 }
 
 @media screen and (max-width:1190px) {

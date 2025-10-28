@@ -21,7 +21,7 @@ p {
     overflow: hidden;
     position: absolute;
     top: 280px;
-    left: 300px;
+    left: 200px;
     font-family: 'Rubik', sans-serif;
 }
 
@@ -40,6 +40,12 @@ p {
     font-weight: 700;
     font-size: 60px;
     color: #fff;
+}
+
+@media screen and (min-width:1500px) {
+    header {
+        height: 900px;
+    }
 }
 
 @media screen and (max-width:1190px) {
@@ -127,6 +133,7 @@ p {
     display: flex;
     flex-direction: column;
     align-items: center;
+    cursor: pointer;
 }
 
 .connect span {
@@ -139,6 +146,7 @@ p {
     display: flex;
     justify-content: center;
     grid-column: 1 / span 2;
+    cursor: pointer;
 }
 
 .submit-message {

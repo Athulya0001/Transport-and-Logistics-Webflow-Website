@@ -1,5 +1,10 @@
 /* Testimonial section */
 
+.bg-grey {
+    background-color: #F4F4F4;
+    padding: 50px 0;
+}
+
 .testimonial {
     margin: 40px 200px;
     display: flex;
@@ -435,6 +440,7 @@
     .pricing-container {
         margin: 40px 200px;
     }
+
     .pricing-grid {
         display: flex;
         flex-direction: column;
@@ -459,6 +465,7 @@
     .pricing-container {
         margin: 40px 100px;
     }
+
     .price-box h1 {
         font-size: 55px;
     }
@@ -530,7 +537,7 @@
 }
 
 .faq-container {
-    margin: 0 200px;
+    margin: 0 150px;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -657,6 +664,18 @@
 
 .client-container img {
     width: 100%;
+}
+
+@media screen and (max-width:780px) {
+    .clients {
+        margin: 30px 150px;
+    }
+}
+
+@media screen and (max-width:580px) {
+    .clients {
+        margin: 30px 100px;
+    }
 }
 
 /* End of client logo section */

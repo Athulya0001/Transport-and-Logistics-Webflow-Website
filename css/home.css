@@ -14,7 +14,7 @@ header {
     width: 560px;
     position: absolute;
     top: 320px;
-    left: 300px;
+    left: 200px;
 }
 
 #head-span {
@@ -148,6 +148,7 @@ header {
 .about-section {
     overflow: hidden;
     background-image: url(../images/Photo.png);
+    background-size: contain;
     background-repeat: no-repeat;
     height: auto;
     margin-bottom: 50px;
@@ -415,7 +416,7 @@ header {
 }
 
 .choose-container {
-    margin: 100px 200px;
+    margin: 100px;
     display: flex;
     gap: 40px;
     justify-content: center;
@@ -429,10 +430,34 @@ header {
     gap: 15px;
 }
 
+.img-container {
+    width: 50%;
+}
+
+.choose-content {
+    width: 50%;
+}
+
 .feature {
     display: flex;
     align-items: center;
     gap: 20px;
+}
+
+@media screen and (min-width:1700px) {
+    .choose-container{
+        margin: 100px 200px;
+    }
+}
+
+@media screen and (max-width:1699px) {
+    .choose-container {
+        gap: 80px;
+    }
+    .img-container,
+    .choose-content{
+        width: fit-content;
+    }
 }
 
 @media screen and (max-width:1190px) {

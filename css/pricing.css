@@ -5,7 +5,7 @@
 
 /* Header */
 header {
-    background: url('../images/about-bg.jpg'), linear-gradient(90.93deg, #000f21 18.18%, rgba(1, 9, 51, 0.3) 64.92%);
+    background: url(../images/pricing-bg.jpg), linear-gradient(90.93deg, #000f21 18.18%, rgba(1, 9, 51, 0.3) 64.92%);
     background-blend-mode: overlay;
     background-size: cover;
     background-repeat: no-repeat;
@@ -17,7 +17,7 @@ p {
     font-weight: 400;
 }
 
-.about-banner {
+.price-banner {
     overflow: hidden;
     position: absolute;
     top: 280px;
@@ -25,7 +25,7 @@ p {
     font-family: 'Rubik', sans-serif;
 }
 
-.about-banner p {
+.price-banner p {
     background-color: rgba(0, 0, 0, 0.3);
     display: inline-block;
     padding: 2px 10px;
@@ -36,7 +36,7 @@ p {
     color: #fff;
 }
 
-.about-banner h1 {
+.price-banner h1 {
     font-weight: 700;
     font-size: 60px;
     color: #fff;
@@ -49,14 +49,14 @@ p {
 }
 
 @media screen and (max-width:1190px) {
-    .about-banner {
+    .price-banner {
         top: 350px;
         left: 200px;
     }
 }
 
 @media screen and (max-width:780px) {
-    .about-banner {
+    .price-banner {
         top: 420px;
         left: auto;
         margin: auto 100px;
@@ -71,65 +71,9 @@ p {
     header {
         height: max-content;
     }
-    .about-banner {
+    .price-banner {
         position: static;
     }
 }
 
 /* End of header section */
-
-/* About section */
-
-.about {
-    margin: 50px 200px 50px 80px;
-    display: flex;
-    justify-content: center;
-    width: auto;
-}
-
-.about-content {
-    padding: 20px;
-}
-
-.approch-btn {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    padding: 20px 0;
-}
-
-.btn-box {
-    width: max-content;
-    padding: 15px 30px;
-    background-color: #F4F4F4;
-}
-
-.btn-box:nth-child(1) {
-    background-color: #FFB82B;
-    color: #fff;
-}
-
-#learn {
-    justify-content: flex-start;
-}
-
-@media screen and (max-width:1190px) {
-    .about {
-        flex-direction: column-reverse;
-        margin: 50px 150px;
-    }
-}
-
-@media screen and (max-width:780px) {
-    .about img {
-        display: none;
-    }
-}
-@media screen and (max-width:580px) {
-    .about {
-        margin: 50px 100px;
-    }
-}
-
-/* End of About section */
