@@ -45,11 +45,14 @@ header {
 }
 
 @media screen and (min-width:1600px) {
-    header {
-        height: 650px;
-    }
     .blog-banner {
         margin: 100px 360px;
+    }
+}
+
+@media screen and (max-width:1599px) {
+    header {
+        height: 650px;
     }
 }
 
@@ -225,8 +228,8 @@ header {
     }
 }
 
-@media screen and (max-width:780px){
-    .blog{
+@media screen and (max-width:780px) {
+    .blog {
         margin: 60px 150px;
     }
 }

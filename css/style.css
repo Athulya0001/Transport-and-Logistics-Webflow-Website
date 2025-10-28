@@ -90,6 +90,23 @@ textarea::placeholder {
     font-family: 'Krub', sans-serif;
 }
 
+.logo p:hover {
+    cursor: pointer;
+    color: #FFB629;
+}
+
+.address .txt:hover p:nth-child(2) {
+    color: #FFB629;
+}
+
+.address svg path {
+  transition: stroke 0.3s ease;
+}
+
+.address svg:hover path {
+  stroke: #fff;
+}
+
 /* Main header */
 
 .head {
@@ -207,6 +224,7 @@ textarea::placeholder {
     .subhead {
         margin: auto 100px;
     }
+
     header {
         height: auto;
         overflow: hidden;
@@ -255,6 +273,11 @@ textarea::placeholder {
     color: #fff;
 }
 
+.menu li a:hover {
+    text-decoration: none;
+    color: #FFB629;
+}
+
 .links {
     display: flex;
     justify-content: center;
@@ -294,6 +317,7 @@ textarea::placeholder {
     .main-menu {
         margin: 0 150px;
     }
+
     .menu ul li {
         background-color: rgba(183, 182, 182, 0.5);
         padding: 10px;
@@ -308,6 +332,7 @@ textarea::placeholder {
     .main-menu {
         margin: 0 100px;
     }
+
     .links {
         flex-direction: column;
     }
@@ -323,7 +348,7 @@ textarea::placeholder {
 
 /* Footer section */
 
-#bg-img{
+#bg-img {
     width: 100%;
 }
 
@@ -349,6 +374,7 @@ footer {
 
 .foot-head .logo {
     background-color: #091242;
+    cursor: pointer;
     padding: 45px 60px;
 }
 
@@ -399,6 +425,11 @@ footer {
     font-weight: 500;
     position: absolute;
     top: 12px;
+    cursor: pointer;
+}
+
+.foot-item h2:hover {
+    color: #FFB629;
 }
 
 .foot-item ul li {
@@ -412,6 +443,11 @@ footer {
 .foot-item li a {
     text-decoration: none;
     color: #fff;
+}
+
+.foot-item li a:hover {
+    text-decoration: none;
+    color: #FFB629;
 }
 
 .foot-item input {
@@ -437,7 +473,16 @@ footer {
 
 #send-button {
     background-image: linear-gradient(to right, #FFB629, #FFDA56, #FFD7A6);
-    padding: 20px 30px;
+    padding: 20px 40px;
+    font-weight: 600;
+    width: fit-content;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+#send-button:hover {
+    background: #fff;
+    border-radius: 3px;
 }
 
 hr {
@@ -469,12 +514,18 @@ hr {
     gap: 20px;
     font-weight: 400;
     color: #8388A7;
+    cursor: pointer;
+}
+
+.lists span:hover {
+    color: #FFDA56;
 }
 
 @media screen and (min-width:1600px) {
     .foot-head {
         margin: auto 360px;
     }
+
     .license {
         margin: 20px 360px;
     }
