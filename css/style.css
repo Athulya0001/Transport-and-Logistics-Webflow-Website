@@ -377,8 +377,8 @@ footer {
 }
 
 .foot-head {
-    box-sizing: border-box;
     margin: auto 200px;
+    box-sizing: border-box;
 }
 
 .foot-head .logo {
@@ -426,6 +426,15 @@ footer {
     justify-content: start;
 }
 
+.subscribe input {
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: transparent;
+    outline: none;
+    border: 1px solid #4E5683;
+}
+
 .foot-item h2 {
     color: #fff;
     padding: 30px;
@@ -457,14 +466,6 @@ footer {
 .foot-item li a:hover {
     text-decoration: none;
     color: #FFB629;
-}
-
-.foot-item input {
-    padding: 20px;
-    background-color: transparent;
-    width: 100%;
-    border: 1px solid grey;
-    outline: none;
 }
 
 

@@ -108,7 +108,7 @@ header {
 }
 
 .service-content h2 {
-    font-size: 25px;
+    line-height: 100%;
 }
 
 .content1 {
@@ -693,6 +693,12 @@ header {
 .blog-content ul li {
     font-weight: 500;
     line-height: 167%;
+}
+
+@media screen and (min-width:1600px) {
+    .blog-section {
+        margin: 50px 360px;
+    }
 }
 
 @media screen and (max-width:1190px) {

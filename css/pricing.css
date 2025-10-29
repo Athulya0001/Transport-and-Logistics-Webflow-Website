@@ -5,7 +5,7 @@
 
 /* Header */
 header {
-    background: url(../images/pricing-bg.jpg), linear-gradient(90.93deg, #000f21 18.18%, rgba(1, 9, 51, 0.3) 64.92%);
+    background: url(../images/ship.png), linear-gradient(90.93deg, #000f21 18.18%, rgba(1, 9, 51, 0.3) 64.92%);
     background-blend-mode: overlay;
     background-size: cover;
     background-repeat: no-repeat;
