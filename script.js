@@ -3,11 +3,9 @@ document.addEventListener("cookieyes_banner_load", function (eventData) {
 
   console.log("Banner loaded, consent details:", consent);
 
-  // Example: Run Google Analytics ONLY if analytics category is allowed
   if (consent.categories.analytics === true) {
     console.log("Analytics consent granted → loading GA");
 
-    // Example: load GA4
     const gtagScript = document.createElement("script");
     gtagScript.src = "https://www.googletagmanager.com/gtag/js?id=G-XXXXXXX";
     document.head.appendChild(gtagScript);
@@ -22,8 +20,22 @@ document.addEventListener("cookieyes_banner_load", function (eventData) {
     console.log("Analytics consent NOT given → GA not loaded.");
   }
 
-  // Example: ads category
   if (consent.categories.advertisement === true) {
     console.log("Ads allowed → load ad scripts here");
   }
+});
+
+document.addEventListener("cookieyes_consent_update", function(eventData) {
+    const { accepted, rejected } = eventData.detail;
+    console.log("User accepted:", accepted, " User rejected:", rejected);
+
+    // Example: If analytics is accepted
+    if(accepted.includes("analytics")) {
+        console.log("Load analytics scripts");
+    }
+
+    // If ads allowed
+    if(accepted.includes("advertisement")) {
+        console.log("Load ads scripts");
+    }
 });
